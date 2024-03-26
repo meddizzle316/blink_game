@@ -4,4 +4,3 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update --fix-missing && apt-get upgrade -y --fix-missing
 RUN apt-get install -y git
 RUN apt-get install -y curl
-RUN npm install semistandard --global
